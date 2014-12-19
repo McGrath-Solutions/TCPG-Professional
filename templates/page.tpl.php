@@ -120,9 +120,8 @@
              data-cycle-pause-on-hover="true" 
              data-cycle-speed="1200" 
              data-cycle-timeout="2000" 
-             data-cycle-slides="> div > a"
+             data-cycle-slides="> div"
              >
-            
               <div><a href="http://104.131.77.190/tcpg-v1a/join"><img src="http://104.131.77.190/tcpg-v1a/sites/default/files/slider/joinSliderImgLg.png" alt="" /></a></div>
               <div><a href="http://104.131.77.190/tcpg-v1a/"><img src="http://104.131.77.190/tcpg-v1a/sites/default/files/slider/descSliderImgLg.png" alt="" /></a></div>
         </div>
