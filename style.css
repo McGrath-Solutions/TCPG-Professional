@@ -1579,9 +1579,6 @@ ol.search-results {
   margin: 0 auto;
 }
 
-/* custom CSS changes */
-
-
 #top-area input.form-text, #top-area select.form-select {
       width: 85%;
     }
@@ -1590,8 +1587,6 @@ ol.search-results {
       width: 50%
     }
 
-   
-/* added */
 #header_left{
     float: left;
     margin: 0 5% 0 0;
@@ -1601,33 +1596,4 @@ ol.search-results {
     float:right;
     width: auto;
     margin: 1% 0 0 0;
-}
-
-/* special CSS embedded in pages and views */
-
-/* board of directors page */
-.director{
-    margin: 1%;
-}
-
-.dirphoto {
-    float: left;
-    border:double 9px #6c666e;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-topright:5px;
-    -moz-border-radius-bottomleft:5px;
-    -moz-border-radius-bottomright:5px;
-    -webkit-border-top-left-radius:5px;
-    -webkit-border-top-right-radius:5px;
-    -webkit-border-bottom-left-radius:5px;
-    -webkit-border-bottom-right-radius:5px;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
-    border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;
-}
-
-.bio{
-    margin-left: 5%;
-    padding: 2%;
 }
