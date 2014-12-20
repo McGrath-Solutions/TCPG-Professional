@@ -25,10 +25,22 @@ function professional_responsive_theme_breadcrumb($variables) {
 }
 
 /**
+ * Insert name of view containing slides.
+ 
+function professional_responsive_theme_slideview($variables) {
+  $slideview = $variables['slideview'];
+  if (!empty($slideview)){
+    $output = views_embed_view($slideview, $display_id = 'default');
+    return $output;
+  }
+}*/
+
+/**
  * Override or insert variables into the page template.
  */
-function professional_responsive_theme_preprocess_page(&$vars) {
-  if (isset($vars['main_menu'])) {
+function professional_responsive_theme_preprocess_page(&$vars) {   
+    $vars['slideview'] = '';
+    if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
       'attributes' => array(
@@ -42,7 +54,6 @@ function professional_responsive_theme_preprocess_page(&$vars) {
     ));
   }
   else {
-    $vars['main_menu'] = FALSE;
   }
   if (isset($vars['secondary_menu'])) {
     $vars['secondary_menu'] = theme('links__system_secondary_menu', array(

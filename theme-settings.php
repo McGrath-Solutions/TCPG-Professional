@@ -21,4 +21,16 @@ function professional_responsive_theme_form_system_theme_settings_alter(&$form, 
     '#default_value' => theme_get_setting('breadcrumbs','professional_responsive_theme'),
     '#description'   => t("Check this option to show breadcrumbs in page. Uncheck to hide."),
   );
+  $form['slide_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Slideshow Settings'),
+    '#collapsible' => FALSE,
+    '#collapsed' => FALSE,
+  );
+  $form['slide_settings']['slideview'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Name of View'),
+    '#default_value' => theme_get_setting('slideview','professional_responsive_theme'),
+    '#description'   => t("Enter name of view containing slide images."),
+  );
 }

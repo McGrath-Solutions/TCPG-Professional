@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.cycle-slideshow img{
+.cycle-slideshow div > div > div > img{
     max-width: 100%;
     display: block;
     vertical-align:baseline;

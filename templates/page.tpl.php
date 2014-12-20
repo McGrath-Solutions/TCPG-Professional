@@ -50,6 +50,7 @@
  *   associated with the page, and the node ID is the second argument
  *   in the page's path (e.g. node/12345 and node/12345/revisions, but not
  *   comment/reply/12345).
+ * - $slide_view: The name of the view containing slides.
  *
  * Regions:
  * - $page['help']: Dynamic help text, mostly for admin pages.
@@ -109,43 +110,32 @@
 </div>
   
   <div id="container">
-
     <?php if ($is_front): ?>
         <?php print $messages; ?>
         <?php print render($page['front_welcome']); ?>
-      
-      <div id="slide_cycle_slideshow">
-          
+
+          <!-- Shelby's Slideshow -->
           <div class="cycle-slideshow" 
              data-cycle-pause-on-hover="true" 
              data-cycle-speed="1200" 
              data-cycle-timeout="2000" 
-             data-cycle-slides="> div"
+             data-cycle-slides="> div > div > div > div"
              >
-              <div><a href="http://104.131.77.190/tcpg-v1a/join"><img src="http://104.131.77.190/tcpg-v1a/sites/default/files/slider/joinSliderImgLg.png" alt="" /></a></div>
-              <div><a href="http://104.131.77.190/tcpg-v1a/"><img src="http://104.131.77.190/tcpg-v1a/sites/default/files/slider/descSliderImgLg.png" alt="" /></a></div>
-        </div>
-      </div>
-      
+              
+            <?php if (theme_get_setting('slideview', 'professional_responsive_theme')): ?>
+                <?php $slideview = (theme_get_setting('slideview', 'professional_responsive_theme'));?>
+                <?php print views_embed_view($slideview, $display_id = 'default'); ?>
+            <?php endif; ?>
+          </div>
+              
         <?php print render($page['slideshow']); ?>
      <!-- Banner -->
     <?php endif; ?>
 
     <div class="content-sidebar-wrap">
-
-        
-        
     <div id="content">
-        
-        
       <?php if (theme_get_setting('breadcrumbs', 'professional_responsive_theme')): ?><div id="breadcrumbs"><?php if ($breadcrumb): print $breadcrumb; endif;?></div><?php endif; ?>
       <section id="post-content" role="main">
-          
-          
-          
-      
-          
-          
         <?php if (!($is_front)): ?>
             <?php print $messages; ?>
             <?php print render($page['front_welcome']); ?>
