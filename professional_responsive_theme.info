@@ -6,6 +6,7 @@ engine = phptemplate
 stylesheets[all][] = style.css
 stylesheets[all][] = media.css
 stylesheets[all][] = slideshow.css
+stylesheets[all][] = custom.css
 scripts[] = js/custom.js
 
 regions[top_header_block]  = Top Header Block
