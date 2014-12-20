@@ -1,0 +1,26 @@
+/********************************
+CUSTOM CSS EMBEDDED IN PAGES, NODES, AND BLOCKS
+
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 20, 2014, 11:01:51 AM
+    Author     : Owner
+*/
+
+/* board of directors page */
+.director{
+    margin: 1%;
+}
+
+.dirphoto {
+    float: left;
+   border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999;
+}
+
+.bio{
+    margin-left: 5%;
+    padding: 2%;
+}
