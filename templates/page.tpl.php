@@ -82,11 +82,6 @@
     <!-- top header block -->
     <div id="top_header_block">
         <?php print render($page['top_header_block']); ?>
-        <a href="https://www.facebook.com/groups/TheCPGroup.org/"><img src="<?php print $base_path . path_to_theme(); ?>/images/facebook.png" alt="Facebook" /></a>
-        <a href="https://twitter.com/TheCPgrouporg"><img src="<?php print $base_path . path_to_theme(); ?>/images/twitter.png" alt="Twitter" /></a>
-        <a href="https://www.youtube.com/user/thecpgroupdotorg"><img src="<?php print $base_path . path_to_theme(); ?>/images/youtube.png" alt="YouTube" /></a>
-        <a href="https://groups.google.com/forum/#!forum/THECPGROUP"><img src="<?php print $base_path . path_to_theme(); ?>/images/google-groups-icon.png" alt="Google Groups" /></a>
-        <a href="mailto:info@thecpgroup.org"><img src="<?php print $base_path . path_to_theme(); ?>/images/email.png" alt="Email" /></a>
     </div>
     <div class="clear"></div>
   </header>
@@ -207,7 +202,13 @@
    <?php endif; ?>
       
     <div id="copyright">
-     <p class="copyright"><?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All rights reserved. </p> <p class="credits"> <?php print t('Theme by'); ?>  <a href="http://www.zymphonies.com">Zymphonies</a> and modified by <a href="http://www.mcgrathsolutions.org">McGrath Solutions, Inc.</a></p>
+        <p class="copyright"><?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All rights reserved. <br /><a href="mailto:info@thecpgroup.org">info@thecpgroup.org</a> | 301.343.7251</p> <p class="credits"> <?php print t('Theme by'); ?>  <a href="http://www.zymphonies.com">Zymphonies</a> and modified by <a href="http://www.mcgrathsolutions.org">McGrath Solutions, Inc.</a>
+     <a href="https://www.facebook.com/groups/TheCPGroup.org/"><img src="<?php print $base_path . path_to_theme(); ?>/images/facebook.png" alt="Facebook" /></a>
+        <a href="https://twitter.com/TheCPgrouporg"><img src="<?php print $base_path . path_to_theme(); ?>/images/twitter.png" alt="Twitter" /></a>
+        <a href="https://www.youtube.com/user/thecpgroupdotorg"><img src="<?php print $base_path . path_to_theme(); ?>/images/youtube.png" alt="YouTube" /></a>
+        <a href="https://groups.google.com/forum/#!forum/THECPGROUP"><img src="<?php print $base_path . path_to_theme(); ?>/images/google-groups-icon.png" alt="Google Groups" /></a>
+        <a href="mailto:info@thecpgroup.org"><img src="<?php print $base_path . path_to_theme(); ?>/images/email.png" alt="Email" /></a>
+     </p>
     <div class="clear"></div>
     </div>
   </div>
