@@ -82,6 +82,7 @@
     <!-- top header block -->
     <div id="top_header_block">
         <?php print render($page['top_header_block']); ?>
+        <a href="<?php print $base_path; ?>cart"><img src="<?php print $base_path . path_to_theme(); ?>/images/cart.png" alt="Shopping Cart" /></a>
     </div>
     <div class="clear"></div>
   </header>
@@ -110,12 +111,14 @@
         <?php print render($page['front_welcome']); ?>
 
           <!-- Shelby's Slideshow -->
-          <div class="cycle-slideshow" 
+          <div class="cycle-slideshow cycle-paused shadow shadow1" 
              data-cycle-pause-on-hover="true" 
              data-cycle-speed="1200" 
              data-cycle-timeout="2000" 
-             data-cycle-slides="> div > div > div > div"
+             data-cycle-slides="> div > div > div > div > div"
              >
+              
+             <div class="cycle-slideshow cycle-sentinel" stype="position:static; top: 0px; z-index: 100; opacity:1; visibility: hidden; display:block;"></div>
               
             <?php if (theme_get_setting('slideview', 'professional_responsive_theme')): ?>
                 <?php $slideview = (theme_get_setting('slideview', 'professional_responsive_theme'));?>
