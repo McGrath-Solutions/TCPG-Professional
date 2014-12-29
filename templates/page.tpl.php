@@ -113,8 +113,8 @@
           <!-- Shelby's Slideshow -->
           <div class="cycle-slideshow cycle-paused shadow shadow1" 
              data-cycle-pause-on-hover="true" 
-             data-cycle-speed="1200" 
-             data-cycle-timeout="2000" 
+             data-cycle-speed="3000" 
+             data-cycle-timeout="3000" 
              data-cycle-slides="> div > div > div > div > div"
              >
               
