@@ -7,6 +7,9 @@ box-sizing:border-box;
 }
 
 .shadow{
+/*position:relative;
+  padding: 100%;
+ background-color:#ddd;*/
 -moz-box-shadow: 3px  3px  5px  6px #ccc;
 -webkit-box-shadow: 3px  3px  5px  6px #ccc;
 box-shadow: 3px  3px  5px  6px #ccc;
@@ -21,12 +24,6 @@ box-shadow: 3px  3px  5px  6px #ccc;
   /*filter: progid:DXImageTransform.Microsoft>Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);*/
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom:1;
-}
-
-.shadow .content{
-  position:relative;
-  padding: 100%;
- background-color:#ddd;
 }
  
 .cycle-slideshow {
