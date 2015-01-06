@@ -112,13 +112,16 @@
 
           <!-- Shelby's Slideshow -->
           <div class="cycle-slideshow cycle-paused shadow shadow1" 
-             data-cycle-pause-on-hover="true" 
+             data-cycle-pause-on-hover="true"
              data-cycle-speed="3000" 
-             data-cycle-timeout="3000" 
+             data-cycle-timeout="3000"
              data-cycle-slides="> div > div > div > div > div"
              >
               
-             <div class="cycle-slideshow cycle-sentinel" stype="position:static; top: 0px; z-index: 100; opacity:1; visibility: hidden; display:block;"></div>
+             <div class="cycle-slideshow cycle-sentinel" style="position:static; top: 0px; z-index: 100; opacity:1; visibility: hidden; display:block;"></div>
+    
+             <div class="cycle-prev"></div>
+             <div class="cycle-next"></div>
               
             <?php if (theme_get_setting('slideview', 'professional_responsive_theme')): ?>
                 <?php $slideview = (theme_get_setting('slideview', 'professional_responsive_theme'));?>
